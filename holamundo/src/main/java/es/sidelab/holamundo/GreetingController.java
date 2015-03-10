@@ -14,6 +14,7 @@ public class GreetingController {
 		return new ModelAndView("greeting_template").addObject("name", name)
 													.addObject("asunto", asunto)
 													.addObject("cuerpo", cuerpo);
+		//Añado comentario de prueba
 	}
 
 }
