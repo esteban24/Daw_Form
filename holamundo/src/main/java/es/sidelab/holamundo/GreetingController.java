@@ -9,9 +9,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class GreetingController {
 	
 	@RequestMapping("/greeting")
-	public ModelAndView greeting(@RequestParam String nombre, @RequestParam String asunto, @RequestParam String cuerpo){
+	public ModelAndView greeting(@RequestParam String name, @RequestParam String asunto, @RequestParam String cuerpo){
 		
-		return new ModelAndView("greeting_template").addObject("name", nombre)
+		return new ModelAndView("greeting_template").addObject("name", name)
 													.addObject("asunto", asunto)
 													.addObject("cuerpo", cuerpo);
 		//poyas
